@@ -1,5 +1,6 @@
 let ataqueJugador
-let ataqueEnemigo 
+let ataqueEnemigo
+ 
 
 function iniciarJuego(){
     let botonMascotaJugador = document.getElementById("boton-mascota")
@@ -60,35 +61,49 @@ function seleccionarMascotaEnemigo() {
 }
 
 function ataqueFuego() {
+    let spanAtaqueJugador = document.getElementById
+    ("ataque-jugador")
     ataqueJugador = "Fuego🔥"
-    alert(ataqueJugador)
+    AtaqueAleatorioEnemigo()
+    if (AtaqueJugador = "Fuego🔥") {
+        spanAtaqueJugador.innerHTML = "Fuego🔥"
+    }
 }
 
 function ataqueAgua() {
+    let spanAtaqueJugador = document.getElementById
+    ("ataque-jugador")
     ataqueJugador = "Agua💧"
-    alert(ataqueJugador)
-    
+    AtaqueAleatorioEnemigo()
+    if (AtaqueJugador = "Agua💧") {
+        spanAtaqueJugador.innerHTML = "Agua💧"
+    }
 }
 
 function ataqueTierra() {
+      let spanAtaqueJugador = document.getElementById
+    ("ataque-jugador")
     ataqueJugador = "Tierra🌱"
-    alert(ataqueJugador)
+    AtaqueAleatorioEnemigo()
+    if (AtaqueJugador = "Tierra🌱") {
+        spanAtaqueJugador.innerHTML = "Tierra🌱"
+    }
 }
 
-function AtaqueEnemigo() {
+function AtaqueAleatorioEnemigo() {
 
     eleccionAtaqueEnemigo = aleatorio(1,3)
-    let ataqueEnemigo = document.getElementById
+    let spanAtaqueEnemigo = document.getElementById
     ("ataque-enemigo")
 
     if (eleccionAtaqueEnemigo == 1) {
-        ataqueEnemigo.innerHTML = "Fuego🔥"
-
+        spanAtaqueEnemigo.innerHTML = "Fuego🔥"
+ 
     } else if (eleccionAtaqueEnemigo == 2) {
-        ataqueEnemigo.innerHTML = "Agua💧"
+        spanAtaqueEnemigo.innerHTML = "Agua💧"
 
     } else {
-        ataqueEnemigo.innerHTML = "Tierra🌱"
+        spanAtaqueEnemigo.innerHTML = "Tierra🌱"
     }
 }
 
