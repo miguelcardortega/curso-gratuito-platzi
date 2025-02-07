@@ -65,7 +65,7 @@ function ataqueFuego() {
     ("ataque-jugador")
     ataqueJugador = "Fuego🔥"
     AtaqueAleatorioEnemigo()
-    if (AtaqueJugador = "Fuego🔥") {
+    if (ataqueJugador = "Fuego🔥") {
         spanAtaqueJugador.innerHTML = "Fuego🔥"
     }
 }
@@ -75,7 +75,7 @@ function ataqueAgua() {
     ("ataque-jugador")
     ataqueJugador = "Agua💧"
     AtaqueAleatorioEnemigo()
-    if (AtaqueJugador = "Agua💧") {
+    if (ataqueJugador = "Agua💧") {
         spanAtaqueJugador.innerHTML = "Agua💧"
     }
 }
@@ -85,7 +85,7 @@ function ataqueTierra() {
     ("ataque-jugador")
     ataqueJugador = "Tierra🌱"
     AtaqueAleatorioEnemigo()
-    if (AtaqueJugador = "Tierra🌱") {
+    if (ataqueJugador = "Tierra🌱") {
         spanAtaqueJugador.innerHTML = "Tierra🌱"
     }
 }
