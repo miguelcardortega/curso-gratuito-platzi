@@ -8,9 +8,9 @@
     <body>
         <h1>MOKEPON! 🔥💧🌱</h1>
         
-        <section id="seleccionar-mascota"></section>
+        <section id="seleccionar-mascota">
             <h2>Selecciona tu mascota:</h2>
-
+            
             <label for="hipodoge">Hipodoge</label>
             <input type="radio" name="mascota" id="hipodoge"/>
             <br>
@@ -24,7 +24,7 @@
             <label for="ratigueya">ratigueya</label>
             <input type="radio" name="mascota" id="ratigueya"/>
             <br>
-
+            
             <!-- Mascotas -->
 
             <!-- Hipodoge -> Agua
@@ -35,13 +35,14 @@
             Pydos -> Tierra y fuego// -->
             <br>
             <button id="boton-mascota">seleccionar</button>
+        </section>
 
         <section id="seleccionar-ataque">
 
             <h2>Selecciona tu ataque:</h2>
         
-            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span>3</span> vidas</p>
-            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas</p>
+            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id= "vidas-enemigo">3</span> vidas</p>
         
             <p>
                 <button id="boton-fuego">Fuego🔥</button>
