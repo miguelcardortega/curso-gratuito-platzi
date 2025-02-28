@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <title>MOKEPON!</title>
         <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <h1>MOKEPON! 🔥💧🌱</h1>
-        
         <section id="seleccionar-mascota">
+            <h1 class="title">MOKEPON! 🔥💧🌱</h1>
             <h2>Selecciona tu mascota:</h2>
             
-            <label for="hipodoge">Hipodoge</label>
-            <input type="radio" name="mascota" id="hipodoge"/>
-            <br>
+            <label class="tarjeta-de-hipodoge" for="hipodoge">Hipodoge</label>
+            <input class="boton-de-tarjeta-mokepon" type="radio" name="mascota" id="hipodoge"/>
             
-            <br>
-            <label for="capipepo">capipepo</label>
-            <input type="radio" name="mascota" id="capipepo"/>
-            <br>
+            
+            
+            <label class="tarjeta-de-capipepo" for="capipepo">capipepo</label>
+            <input class="boton-de-tarjeta-mokepon" type="radio" name="mascota" id="capipepo"/>
+            
 
-            <br>
-            <label for="ratigueya">ratigueya</label>
-            <input type="radio" name="mascota" id="ratigueya"/>
-            <br>
             
+            <label class="tarjeta-de-ratigueya" for="ratigueya">ratigueya</label>
+            <input class="boton-de-tarjeta-mokepon" type="radio" name="mascota" id="ratigueya"/>
+            
+        
             <!-- Mascotas -->
 
             <!-- Hipodoge -> Agua
@@ -33,12 +33,12 @@
             Langostelvis -> Agua y Fuego
             Tucapalma -> Agua y Tierra
             Pydos -> Tierra y fuego// -->
-            <br>
-            <button id="boton-mascota">seleccionar</button>
+        
+            <button class="boton-seleccionar-mokepon" id="boton-mascota">seleccionar</button>
         </section>
 
         <section id="seleccionar-ataque">
-
+            <h1 class="title">MOKEPON! 🔥💧🌱</h1>
             <h2>Selecciona tu ataque:</h2>
         
             <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>

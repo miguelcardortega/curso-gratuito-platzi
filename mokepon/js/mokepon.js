@@ -11,6 +11,7 @@ function iniciarJuego(){
 
     let sectionBotonReiniciar = document.getElementById("boton-reiniciar")
     sectionBotonReiniciar.style.display = "none"
+    
 
     let botonMascotaJugador = document.getElementById("boton-mascota")
     botonMascotaJugador.addEventListener("click", seleccionarMascotaJugador)
@@ -42,11 +43,11 @@ function seleccionarMascotaJugador() {
     let inputCapipepo = document.getElementById("capipepo")
     let inputRatigueya = document.getElementById("ratigueya")
     let spanmascotaJugador = document.getElementById("mascota-jugador")
-    let botonMascotaJugador = document.getElementById("boton-mascota")
-    botonMascotaJugador.disabled
+   
     
     if (inputHipodoge.checked){
         spanmascotaJugador.innerHTML = "Hipodoge"
+        
 
     } else if (inputCapipepo.checked){
         spanmascotaJugador.innerHTML = "Capipepo" 
@@ -81,7 +82,7 @@ function seleccionarMascotaEnemigo() {
 }
 
 function ataqueFuego() {
-
+    
     ataqueJugador = "Fuego🔥"
     ataqueAleatorioEnemigo()
 
