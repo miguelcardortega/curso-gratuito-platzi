@@ -34,21 +34,24 @@ body{
     gap: 10px;
     font-size: 17px;
     font-weight: bolder;
-    text-shadow: 1px 1px 0px #FFB22C;
+    text-shadow: 1px 1px 0px #854836;
+    color: #FFB22C;
 }
 
 .tarjeta-de-hipodoge {
     width: 182px;
     height: 262px;
-    padding: 10px;
+    padding: 1px;
     box-sizing: border-box;
-    background-color: #F7F7F7;
     margin: 10px;
-    border: 1px solid #000000;
-    border-radius: 34px;
+    border: 3px solid #000000;
+    border-radius: 10px;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-start;
+    background-image: url(./assets/fondo-de-tarjeta-negro-dorado.jfif);
+    background-size: 180px 265px;
+    background-position: center;
+    justify-content: center;
     align-items: center;
     
 }
@@ -60,35 +63,39 @@ body{
 .tarjeta-de-capipepo {
     width: 182px;
     height: 262px;
-    padding: 10px;
+    padding: 1px;
     box-sizing: border-box;
-    background-color: #F7F7F7;
     margin: 10px;
-    border: 1px solid #000000;
-    border-radius: 34px;
+    border: 3px solid #000000;
+    border-radius: 10px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column-reverse;
+    background-image: url(./assets/fondo-de-tarjeta-negro-dorado.jfif);
+    background-size: 180px 265px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .tarjeta-de-capipepo img{
-    width: 129px;
+    width: 122px;
 }
 
 .tarjeta-de-ratigueya {
     width: 182px;
     height: 262px;
-    padding: 10px;
+    padding: 1px;
     box-sizing: border-box;
-    background-color: #F7F7F7;
     margin: 10px;
-    border: 1px solid #000000;
-    border-radius: 34px;
+    border: 3px solid #000000;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column-reverse;
-    justify-content: flex-start;
+    background-image: url(./assets/fondo-de-tarjeta-negro-dorado.jfif);
+    background-size: 180px 265px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .tarjeta-de-ratigueya img{
