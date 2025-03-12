@@ -1,9 +1,15 @@
-.title {
-    color: white;
-    width: 223px;
-    height: 35px;
-    background-color: black;
+/* @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap'); */
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+body{
+    /* font-family: "Braah One", sans-serif; */
+    font-family: 'Harry Potter', sans-serif;
+    background-color: #EEEEEE;
+    background-image: url(./assets/gifcastillo.gif);
+    background-size: 1470px 703px;
+    
 }
+
 
 #seleccionar-mascota {
     display: flex;
@@ -12,34 +18,81 @@
     align-items: center;
 }
 
+.title {
+    color: #FFB22C;
+    font-size: 52px;
+}
+
+.subtitulo {
+    color: #FFB22C;
+    font-size: 32px;
+    margin-top: auto;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px #FFB22C;
+}
+
 .tarjeta-de-hipodoge {
-    width: 100px;
-    height: 100px;
+    width: 182px;
+    height: 262px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: orangered;
+    background-color: #F7F7F7;
     margin: 10px;
-    border: 4px solid yellow;
+    border: 1px solid #000000;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.tarjeta-de-hipodoge img{
+    width: 162px;
 }
 
 .tarjeta-de-capipepo {
-    width: 100px;
-    height: 100px;
+    width: 182px;
+    height: 262px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: cornflowerblue;
+    background-color: #F7F7F7;
     margin: 10px;
-    border: 4px solid lightskyblue;
+    border: 1px solid #000000;
+    border-radius: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.tarjeta-de-capipepo img{
+    width: 129px;
 }
 
 .tarjeta-de-ratigueya {
-    width: 100px;
-    height: 100px;
+    width: 182px;
+    height: 262px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: green;
+    background-color: #F7F7F7;
     margin: 10px;
-    border: 4px solid saddlebrown;
+    border: 1px solid #000000;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.tarjeta-de-ratigueya img{
+    width: 162px;
 }
 
 .boton-de-tarjeta-mokepon {
@@ -47,9 +100,13 @@
     height: 30px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #000000;
     margin: 5px;
-    border: 3px solid tomato;
+    border: 3px solid #FFB22C;
+}
+
+input {
+    display: none;
 }
 
 .boton-seleccionar-mokepon {
@@ -57,8 +114,8 @@
     height: 30px;
     padding: 4px;
     box-sizing: border-box;
-    background-color: darkslategray;
+    background-color: #FFB22C;
     margin: 5px;
     border: 3px solid black;
-    color: navajowhite;
+    color: #000000;
 }
