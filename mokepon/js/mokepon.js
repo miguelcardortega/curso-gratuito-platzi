@@ -46,17 +46,17 @@ function seleccionarMascotaJugador() {
    
     
     if (inputHipodoge.checked){
-        spanmascotaJugador.innerHTML = "Hipodoge"
+        spanmascotaJugador.innerHTML = "Harry Potter"
         
 
     } else if (inputCapipepo.checked){
-        spanmascotaJugador.innerHTML = "Capipepo" 
+        spanmascotaJugador.innerHTML = "Ron Weasly" 
 
     } else if (inputRatigueya.checked){
-        spanmascotaJugador.innerHTML = "Ratigueya"
+        spanmascotaJugador.innerHTML = "Hermione Granger"
 
     } else {
-        alert("selecciona una mascota")
+        alert("selecciona un Hechicero")
 
     }
     
@@ -70,13 +70,13 @@ function seleccionarMascotaEnemigo() {
     ("mascota-enemigo")
 
     if (eleccionEnemigo == 1) {
-        spanmascotaEnemigo.innerHTML = "Hipodoge"
+        spanmascotaEnemigo.innerHTML = "Harry Potter"
 
     } else if (eleccionEnemigo == 2) {
-        spanmascotaEnemigo.innerHTML = "Capipepo"
+        spanmascotaEnemigo.innerHTML = "Ron Weasly"
 
     } else {
-        spanmascotaEnemigo.innerHTML = "Ratigueya"
+        spanmascotaEnemigo.innerHTML = "Hermione Granger"
     }
 
 }
@@ -123,7 +123,7 @@ function crearMensaje(resultado) {
     let sectionMensajes = document.getElementById("mensajes")
     let parrafo = document.createElement("p")
 
-    parrafo.innerHTML = ("Tu mascota ataco con " + ataqueJugador + ", la mascota del enemigo ataco con " + ataqueEnemigo + ". " + resultado )
+    parrafo.innerHTML = ("Tu Hechicero ataco con " + ataqueJugador + ", El Hechicero del enemigo ataco con " + ataqueEnemigo + ". " + resultado )
 
     sectionMensajes.appendChild(parrafo)
 }

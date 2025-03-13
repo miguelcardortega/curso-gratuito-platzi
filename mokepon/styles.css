@@ -1,8 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/harry-potter');
+/* font-family: "Braah One", sans-serif; */
 
-body{
-    /* font-family: "Braah One", sans-serif; */
+body{    
     font-family: 'Harry Potter', sans-serif;
     background-color: #EEEEEE;
     background-image: url(./assets/gifcastillo.gif);
@@ -33,12 +33,12 @@ body{
     display: flex;
     gap: 10px;
     font-size: 17px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     text-shadow: 1px 1px 0px #854836;
     color: #FFB22C;
 }
 
-.tarjeta-de-hipodoge {
+.tarjeta-de-hipodoge{
     width: 182px;
     height: 262px;
     padding: 1px;
@@ -54,6 +54,10 @@ body{
     justify-content: center;
     align-items: center;
     
+}
+
+.tarjeta-de-hipodoge:hover {
+    cursor: pointer;
 }
 
 .tarjeta-de-hipodoge img{
@@ -77,6 +81,10 @@ body{
     align-items: center;
 }
 
+.tarjeta-de-capipepo:hover {
+    cursor: pointer;
+}
+
 .tarjeta-de-capipepo img{
     width: 122px;
 }
@@ -98,11 +106,15 @@ body{
     align-items: center;
 }
 
+.tarjeta-de-ratigueya:hover {
+    cursor: pointer;
+}
+
 .tarjeta-de-ratigueya img{
     width: 162px;
 }
 
-.boton-de-tarjeta-mokepon {
+.boton-de-tarjeta-mokepon{
     width: 30px;
     height: 30px;
     padding: 10px;
@@ -112,17 +124,26 @@ body{
     border: 3px solid #FFB22C;
 }
 
+.boton-seleccionar-mokepon:hover{
+    cursor: pointer;
+    background-color: #FFB22C;
+    
+}
+
 input {
     display: none;
 }
 
 .boton-seleccionar-mokepon {
-    width: 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 5px;
+    width: 404px;
     height: 30px;
     padding: 4px;
-    box-sizing: border-box;
-    background-color: #FFB22C;
-    margin: 5px;
-    border: 3px solid black;
+    background-color: #ffb22c96;
     color: #000000;
 }
