@@ -14,8 +14,8 @@
             
             <div class="tarjetas">
 
-            <label class="tarjeta-de-hipodoge" for="hipodoge">
-                <p>Harry Potter</p>
+            <label class="tarjeta-de-hipodoge" for="hipodoge">               
+                <p>Harry Potter</p>               
                 <img src="./assets/harry.png" alt="Harry-Potter">
             </label>
             <input class="boton-de-tarjeta-mokepon" type="radio" name="mascota" id="hipodoge"/>
@@ -33,39 +33,43 @@
             <input class="boton-de-tarjeta-mokepon" type="radio" name="mascota" id="ratigueya"/>
 
             </div>
-            
-            <!-- Mascotas -->
-
-            <!-- Hipodoge -> Agua
-            Capipepo -> Tierra
-            Ratigueya -> Fuego
-            Langostelvis -> Agua y Fuego
-            Tucapalma -> Agua y Tierra
-            Pydos -> Tierra y fuego// -->
         
             <button class="boton-seleccionar-mokepon" id="boton-mascota">seleccionar</button>
         </section>
 
         <section id="seleccionar-ataque">
             <h1 class="title">Campo de Batalla</h1>
-            <h2>Selecciona tu ataque:</h2>
-        
-            <p>Tu <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>El <span id="mascota-enemigo"></span> del enemigo tiene <span id= "vidas-enemigo">3</span> vidas</p>
-        
-            <p>
-                <button id="boton-fuego">Fuego🔥</button>
-                <button id="boton-agua">Agua💧</button>
-                <button id="boton-tierra">Tierra🌱</button>
-            </p>
-        </section>
 
-        <section id="mensajes">
+            <h2 class="subtitulo">Selecciona tu ataque:</h2>
+
+            <div>
+                <button id="boton-fuego" class="boton-de-ataques">Fuego🔥</button>
+                <button id="boton-agua" class="boton-de-ataques">Agua💧</button>
+                <button id="boton-tierra" class="boton-de-ataques">Tierra🌱</button>
+            </div>
+
             
-        </section>
+            <div id="mensajes">
+                <p id="resultado">Comienza la Batalla</p>
+                
+                <section id="reiniciar">    
+                    <button id="boton-reiniciar">Reiniciar</button>              
+                </section>
+            </div>
+            
+            <div class="ataques-de-los-personajes">
 
-        <section>    
-            <button id="boton-reiniciar">Reiniciar</button>
-        </section>
+            <div class="mensajes-de-movimientos">
+                <div id="ataques-del-jugador"></div>
+                <p>Tu <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            </div>                       
+            
+            <div class="mensajes-de-movimientos">              
+                <div id="ataques-del-enemigo"></div>
+                <p>El <span id="mascota-enemigo"></span> del enemigo tiene <span id= "vidas-enemigo">3</span> vidas</p>    
+            </div>
+
+            </div>
+        </section>        
     </body>
 </html>

@@ -33,7 +33,7 @@ function iniciarJuego(){
 function seleccionarMascotaJugador() {
 
     let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque")
-    sectionSeleccionarAtaque.style.display = "block"
+    sectionSeleccionarAtaque.style.display = "flex"
 
     let sectionSeleccionarMascotaJugador = document.getElementById("seleccionar-mascota")
     sectionSeleccionarMascotaJugador.style.display = "none"
@@ -120,24 +120,33 @@ function ataqueAleatorioEnemigo() {
 
 function crearMensaje(resultado) {
 
-    let sectionMensajes = document.getElementById("mensajes")
-    let parrafo = document.createElement("p")
+    let sectionMensajes = document.getElementById("resultado")
+    let ataquesDelJugador = document.getElementById("ataques-del-jugador")
+    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo")
 
-    parrafo.innerHTML = ("Tu Hechicero ataco con " + ataqueJugador + ", El Hechicero del enemigo ataco con " + ataqueEnemigo + ". " + resultado )
+    let nuevoAtaqueDelJugador = document.createElement("p")
+    let nuevoAtaqueDelEnemigo = document.createElement("p")
 
-    sectionMensajes.appendChild(parrafo)
+    sectionMensajes.innerHTML = resultado
+    nuevoAtaqueDelJugador.innerHTML = ataqueJugador
+    nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo
+
+    // parrafo.innerHTML = ("Tu Hechicero ataco con " + ataqueJugador + ", El Hechicero del enemigo ataco con " + ataqueEnemigo + ". " + resultado )
+
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 }
 
 function crearMensajeFinal(resultadoFinal) {
 
-    let sectionMensajes = document.getElementById("mensajes")
+    let sectionMensajes = document.getElementById("resultado")
+
     let parrafoFinal = document.createElement("p")
+
     let sectionBotonReiniciar = document.getElementById("boton-reiniciar")
-    sectionBotonReiniciar.style.display = "block"
+    sectionBotonReiniciar.style.display = "flex"
 
-    parrafoFinal.innerHTML = (resultadoFinal)
-
-    sectionMensajes.appendChild(parrafoFinal)
+    sectionMensajes.innerHTML = (resultadoFinal)
 
     let botonFuego = document.getElementById("boton-fuego")
     botonFuego.disabled = true

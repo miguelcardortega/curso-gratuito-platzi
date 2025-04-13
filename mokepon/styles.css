@@ -56,8 +56,9 @@ body{
     
 }
 
-.tarjeta-de-hipodoge:hover {
+.tarjeta-de-hipodoge img:hover {
     cursor: pointer;
+    width: 200px;
 }
 
 .tarjeta-de-hipodoge img{
@@ -81,8 +82,9 @@ body{
     align-items: center;
 }
 
-.tarjeta-de-capipepo:hover {
+.tarjeta-de-capipepo img:hover {
     cursor: pointer;
+    width: 150px;
 }
 
 .tarjeta-de-capipepo img{
@@ -94,9 +96,9 @@ body{
     height: 262px;
     padding: 1px;
     box-sizing: border-box;
-    margin: 10px;
-    border: 3px solid #000000;
     border-radius: 10px;
+    border: 3px solid #000000;
+    margin: 10px;
     display: flex;
     flex-direction: column-reverse;
     background-image: url(./assets/fondo-de-tarjeta-negro-dorado.jfif);
@@ -106,12 +108,15 @@ body{
     align-items: center;
 }
 
-.tarjeta-de-ratigueya:hover {
-    cursor: pointer;
-}
 
 .tarjeta-de-ratigueya img{
     width: 162px;
+    
+}
+
+.tarjeta-de-ratigueya img:hover {
+    cursor: pointer;
+    width: 200px;
 }
 
 .boton-de-tarjeta-mokepon{
@@ -146,4 +151,63 @@ input {
     padding: 4px;
     background-color: #ffb22c96;
     color: #000000;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataques {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #ffb22cc2;
+    color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.boton-de-ataques:hover {
+    cursor: pointer;
+    background-color: #ffb22c;
+}
+
+#mensajes {
+    width: 294px;
+    background-color: #ffb22c;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: #854836c2;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#boton-reiniciar:hover {
+    cursor: pointer;
+    background-color: #854836;
+}
+
+.mensajes-de-movimientos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.ataques-de-los-personajes {
+    display: grid;
+    grid-template-columns: 210px 290px;
 }
